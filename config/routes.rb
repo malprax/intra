@@ -1,9 +1,8 @@
 Intra::Application.routes.draw do
   resources :messages
 
-  resources :pages do
-    resources :comments
-  end
+  resources :pages 
+    
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
