@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hr.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @hr.content %>
+</p>
+
+<%= link_to 'Edit', edit_hr_path(@hr) %> |
+<%= link_to 'Back', hrs_path %>
