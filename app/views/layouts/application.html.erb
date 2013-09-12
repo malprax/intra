@@ -13,13 +13,17 @@
     <div class="row-fluid">
       <div class="span2 well ">
         <!--Sidebar content-->
-        <%= render 'layouts/sidebar' %>       
+        <div class = "row-fluid">
+         <%= render 'layouts/sidebar' %>   
+        </div>
+             
       </div>    
    
       <div class="span10 well">
         <!--Body content-->
         <%= yield %>
       </div>
+      
     </div>
   </div>
   

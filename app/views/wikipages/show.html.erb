@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @wikipage.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @wikipage.content %>
+</p>
+
+<%= link_to 'Edit', edit_wikipage_path(@wikipage) %> |
+<%= link_to 'Back', wikipages_path %>

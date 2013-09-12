@@ -1,4 +1,6 @@
 Intra::Application.routes.draw do
+  resources :wikipages
+
   resources :hrs
   resources :messages
    

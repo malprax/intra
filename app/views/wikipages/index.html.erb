@@ -1,0 +1,29 @@
+<h1>Listing wikipages</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Content</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wikipages.each do |wikipage| %>
+      <tr>
+        <td><%= wikipage.name %></td>
+        <td><%= wikipage.content %></td>
+        <td><%= link_to 'Show', wikipage %></td>
+        <td><%= link_to 'Edit', edit_wikipage_path(wikipage) %></td>
+        <td><%= link_to 'Destroy', wikipage, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Content', new_wikipage_path %>
