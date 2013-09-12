@@ -5,6 +5,7 @@ class HrsController < ApplicationController
   # GET /hrs.json
   def index
     @hrs = Hr.all
+    @json = Wikipage.all.to_gmaps4rails
   end
 
   # GET /hrs/1

@@ -1,11 +1,24 @@
-<div class="span6 hr">
-  <h3>HR Page</h3>
-  <p></p>
+<div class="row-fluid">
+  <div class="span10">
+    <article>HR Page</article>
+     <% @hrs.each do |hr| %>
+    <h4><%= hr.name %></h4>
+    <p><%= hr.content %></p>
+    <% end %> 
+    
+    <aside>
+       <%= link_to 'New HR', new_hr_path %> 
+    </aside> 
+    
+  </div>  
 </div>
-<div class="span4 well">
-  <!--Body content-->
- <img src="http://maps.google.com/maps/api/staticmap?size=255x255&maptype=roadmap&sensor=false&markers=color:blue|label:A|Chicago,IL&markers=color:purple|label:B|Hammond,IN" alt="Static, Marked Map of Chicago, Illinois and Hammond, Indiana with no Center and Zoom" width=300></img>
-  
+<div class="row-fluid">
+  <div class="span10">
+    <center>
+      <%= render "wikipages/maps" %>
+    </center>
+  </div>
 </div>
+
 
 

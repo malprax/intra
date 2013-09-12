@@ -5,11 +5,13 @@ class WikipagesController < ApplicationController
   # GET /wikipages.json
   def index
     @wikipages = Wikipage.all
+    @json = Wikipage.all.to_gmaps4rails
   end
 
   # GET /wikipages/1
   # GET /wikipages/1.json
   def show
+    @json = User.all.to_gmaps4rails
   end
 
   # GET /wikipages/new

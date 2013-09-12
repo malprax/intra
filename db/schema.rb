@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130912020156) do
+ActiveRecord::Schema.define(version: 20130912142308) do
 
   create_table "hrs", force: true do |t|
     t.string   "name"
-    t.string   "content"
+    t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -38,6 +38,9 @@ ActiveRecord::Schema.define(version: 20130912020156) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "gmaps"
   end
 
 end
