@@ -38,7 +38,7 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem "twitter-bootstrap-rails"
 gem "rails_12factor"
 gem "simple_form", '~> 3.0.0.rc'
-gem 'gmaps4rails'
+gem 'gmaps4rails','>= 2.0.0.pre', git: 'https://github.com/fiedl/Google-Maps-for-Rails.git'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
