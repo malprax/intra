@@ -620,8 +620,10 @@ padding: 10px 15px 10px;
 color: #1A1717;
 text-decoration: none;
 text-shadow: 0 1px 0 #ffffff;
-font-size: 20px;
-text-align: center;
+font-size: 25px;
+font-family: 'NeutraTextTF-BoldAlt', sans-serif;
+text-transform: uppercase;
+width: 100px;
 }
 
 
@@ -1000,8 +1002,90 @@ text-align: center;
   color: #ffffff;
 }
 
-.navbar-inner {
+.tombol{
   text-align:center;
+}
+
+.navbar .navbar-inner {
+    text-align: center; 
+    background-image: linear-gradient(to bottom, #BAE7E9, #9DC2BA);
+}
+.navbar .navbar-inner .nav {
+    float: none;
+    display:inline-block;
+}
+
+.well {
+min-height: 20px;
+padding: 10px;
+margin-bottom: 20px;
+background-color: #E6DEBE;
+border: 1px solid #e3e3e3;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+body {
+margin: 0;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 25px;
+color: #333333;
+background-color: #F0ECDD;
+padding-top:65px;
+}
+
+h1, h2, h3 {
+line-height: 30px;
+}
+
+.nav-pills .dropdown-menu {
+-webkit-border-radius: 0px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
+
+.dropdown-menu {
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1000;
+display: none;
+float: left;
+min-width: 160px;
+padding: 5px 0;
+margin: 2px 0 0;
+list-style: none;
+background-color: #E6DEBE;
+border: 1px solid #ccc;
+border: 1px solid rgba(0, 0, 0, 0.2);
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+-webkit-background-clip: padding-box;
+-moz-background-clip: padding;
+background-clip: padding-box;
+}
+
+
+
+textarea {
+height: 200px;
+}
+
+.form-actions {
+padding-left: 0px 0px 0px;
+margin-top: 20px;
+margin-bottom: 20px;
+background-color: #E6DEBE;
+border-top: 1px solid #e5e5e5;
 }
 
 
