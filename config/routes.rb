@@ -1,6 +1,5 @@
 Intra::Application.routes.draw do
   resources :hrs
-
   resources :messages
    
 
