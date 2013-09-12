@@ -619,7 +619,13 @@ float: none;
 padding: 10px 15px 10px;
 color: #1A1717;
 text-decoration: none;
-text-shadow: 0 1px 0 #ffffff;}
+text-shadow: 0 1px 0 #ffffff;
+font-size: 20px;
+
+}
+
+
+
 
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -992,6 +998,10 @@ text-shadow: 0 1px 0 #ffffff;}
 
 .navbar-inverse .navbar-link:hover {
   color: #ffffff;
+}
+
+.navbar-inner {
+  text-align:center;
 }
 
 
